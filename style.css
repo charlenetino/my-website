@@ -1,0 +1,536 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: fit-content;
+    font-size: 75px;
+}
+
+/*Load Page*/
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+.loader{
+    width: 100px;
+    height: 100px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #2ecc71;
+    }
+    50%{
+        color: #f1c40f;
+    }
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*Navbar*/
+
+.menu{
+    position: fixed;
+    z-index: 100;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 5px -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: ease-in-out 0.4s;
+}
+
+#LANAV{
+    transform: translateX(-500px);
+}
+
+.navbar{
+    transition: ease-in-out 0.4s;
+    z-index: 101;
+    background-color: white;
+    box-shadow: 5px -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: left;
+    justify-content: bottom;
+    flex-direction: column-reverse;
+}
+
+.navbar .closee{
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar .closee img, .menu img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.navbar .btn{
+    padding: 50px 150px;
+    text-align: center;
+}
+.navbar :nth-child(2){
+    background-color: black;
+    color: white;
+}
+.navbar :nth-child(3){
+    background-color: #E6635A;
+    color: white;
+}
+.navbar :nth-child(4){
+    background-color: #FABDBD;
+    color: white;
+}
+.navbar :nth-child(5){
+    background-color: #F4A460;
+    color: white;
+}
+
+.navbar :nth-child(6){
+    color: black;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Index Swiper*/
+
+.swiper {
+    width: 100%;
+    height: 70vh;
+    color: white;
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff;
+    --swiper-navigation-size: 90px;
+    --swiper-pagination-bullet-size :30px;
+  }
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caroussel1{
+    background-image: url("images/carrousel1.jpeg");
+    background-size: cover;   
+}
+.caroussel2{
+    background-image: url("images/carrousel2.jpg");
+    background-size: cover;   
+}
+.caroussel3{
+    background-image: url("images/carrousel3.jpg");
+    background-size: cover;   
+}
+
+.caroussel4{
+    background-image: url("images/carrousel4.jpg");
+    background-size: cover;   
+}
+
+.titrecarroussel{
+    padding: 5px 20px;
+    color: #000000;
+    width:fit-content;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.header-programme{
+    margin-top: 50px;
+    margin-bottom: 5%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programmes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+.programmes .btn{
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px; 
+    border: none;
+    margin: 0;
+}
+
+.sporty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 20vh;
+    background-image: url(images/sporty.jpg);
+    background-size: cover;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.sporty .btn{
+    color: #E6635A;
+}
+
+
+.mix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 20vh;
+    background-color: #FABDBD;
+    background-image: url(images/mix.png);
+    background-size: cover;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.mix .btn{
+    color: #FABDBD;
+}
+
+.yoga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 20vh;
+    background-color: #F4A460;
+    background-image: url(images/yoga.jpg);
+    background-size: cover;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.yoga .btn{
+    color: #F4A460;
+}
+
+/*Titres et News*/
+
+.titrehomepage{
+    position: absolute;
+    top: 59vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 2;
+}
+.white{
+    color: white;
+}
+
+.header-news{
+    margin-top: 30%;
+    margin-bottom: 5%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news{
+    margin-left: 10%;
+    width: 80%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.photo-news{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url("images/news.png");
+    background-size: cover;
+    height: 400px;
+}
+
+
+
+/*Index-Sport*/
+
+/*Différentes pages*/
+
+.indexsport_sporty{
+    background-color: #E6635A;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+.indexsport_mix{
+    background-color: #FABDBD;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+.indexsport_yoga{
+    background-color: #F4A460;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.indexsport_sporty .homephoto{
+    background-image: url("images/homephoto_sporty.jpeg");
+}
+.indexsport_mix .homephoto{
+    background-image: url("images/homephoto_mix.jpeg");
+    transform: scaleX(-1);
+}
+.indexsport_yoga .homephoto{
+    background-image: url("images/homephoto_yoga.jpeg");
+}
+
+.indexsport_sporty .accueil, .indexsport_sporty .titre{
+    color: #E6635A;    
+}
+.indexsport_mix .accueil, .indexsport_mix .titre{
+    color: #FABDBD;
+}
+.indexsport_yoga .accueil, .indexsport_yoga .titre{
+    color: #F4A460;
+}
+
+/*Accueil*/
+
+.titre{
+    position: absolute;
+    color: #000000;
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 70%;
+    margin-top: 5%;
+    text-align: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+.accueil {
+    font-size: 7vw;
+    margin-top: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    background: linear-gradient(102deg, rgba(0,0,0,0) 0%, rgba(255,255,255,0.7) 100%);
+}
+
+.homephoto{
+    background-size: cover;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: 0;
+    top : 40px;
+    z-index: -1;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.citation{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 380px;
+    font-size: xxx-large;
+    font-style: italic;
+    color: white
+}
+
+.plan{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+.indexsport_sporty .swiper {
+    background-color: #E6635A;
+}
+.indexsport_mix .swiper {
+    background-color: #FABDBD;
+}
+.indexsport_yoga .swiper {
+    background-color: #F4A460;
+}
+
+.indexsport_sporty .swiper, .indexsport_mix .swiper, .indexsport_yoga .swiper{
+    height: 1500px;
+}
+
+.indexsport_sporty .swiper img, .indexsport_mix .swiper img, .indexsport_yoga .swiper img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.indexsport_sporty .swiper-slide, .indexsport_mix .swiper-slide, .indexsport_yoga .swiper-slide {
+    justify-content: space-evenly;
+}
+
+.activite{
+    display: inline-block;
+    font-size: xxx-large;
+}
+
+.swiper-slide a{
+    text-decoration: none;
+    color: #000000;
+    background-color: white;margin-top: 50px;
+    z-index: auto;
+    padding: 10px 30px;
+}
+
+.swiper-pagination{
+    bottom: auto !important;
+    top: -25px !important;
+}
+
+/*Index_Old*/
+/*
+
+.carrousel{
+    background-color: #E6635A;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 8px 12px #aaa;
+}
+
+#container{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.photo{
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    
+}
+
+#boutongauche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+    left: 80vw;
+    margin: 0;
+    height: 70%;
+    width: 20vw;
+}
+#boutondroit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+    left: 0;
+    margin: 0;
+    height: 80px;
+    width: 80px;
+    height: 70%;
+    width: 20vw;
+}
+
+#boutongauche .g{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    border: 15px solid white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+}
+
+#boutondroit .d{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    border: 15px solid white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(-135deg);
+}
+
+.btncar{
+    margin-top: 18% ;
+    margin-left: 34% ;
+    padding: 0.5% 2% ;
+    width:fit-content;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.btncar a{
+    text-decoration: none;
+    color: black;
+}
+
+*/

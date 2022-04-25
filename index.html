@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+   
+    <title>Charlène Cosentino</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="loader-container">
+    <h3>Welcome</h3>
+    <div class="loader"></div>
+    <i>Charlène Cosentino</i>
+  </div>
+
+  <div class="menu" id="JECLICK"><img src="images/menu.png" alt=""></div>
+  <div class="navbar" id="LANAV">
+    <div class="closee" id="JERECLICK"><img src="images/close.png" alt=""></div>
+    <a href="index.html" class="btn">Home</a>
+    <a href="indexsport_sporty.html" class="btn">Sporty</a>
+    <a href="indexsport_mix.html" class="btn">Mix</a>
+    <a href="indexsport_yoga.html" class="btn">Yoga</a>
+    <a href="https://www.instagram.com/charlene.cosentino/" target="_blank" class="btn">Insta</a> 
+  </div>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide caroussel1"> <div class="titrecarroussel">SPORT</div>
+            <div class="header-programme"><h2>Choose your style</h2></div>
+            <div class="programmes">
+                <div class="sporty">
+                    <a href="indexsport_sporty.html" class="btn">Sporty</a>
+                </div>
+                <div class="mix">
+                        <a href="indexsport_mix.html" class="btn">Mix</a>
+                </div>     
+                <div class="yoga">
+                        <a href="indexsport_yoga.html" class="btn">Yoga</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide caroussel2"><div class="titrecarroussel">Slide2</div></div>
+          <div class="swiper-slide caroussel3"><div class="titrecarroussel">Slide3</div></div>
+          <div class="swiper-slide caroussel4"><div class="titrecarroussel">Slide4</div></div>
+          ...
+        </div>
+              
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+    <div class="titrehomepage"><h1><div class="white">Charlène</div> Cosentino</h1></div>
+
+
+    <div class="header-news"><h2>News</h2></div>
+    <div class="news">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet ab ea nostrum a commodi cumque eos, excepturi dignissimos voluptatibus nesciunt illo error temporibus illum, sint, porro beatae explicabo corrupti.
+        <div class="photo-news"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="navbar.js"></script>
+    <script>
+      $(window).on("load",function(){
+          $(".loader-container").fadeOut(1000);
+      });
+    </script>
+
+</body>
+</html>

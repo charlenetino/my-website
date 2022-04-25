@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+   
+    <title>Charlène Cosentino</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="carrousel">
+        <div id="container"></div>
+        <div id="boutondroit"><div class="d"></div></div>
+        <div id="boutongauche"><div class="g"></div></div>
+    </div>
+
+    <div class="titrehomepage"><h1><div class="white">Charlène</div> Cosentino</h1></div>
+
+    <div class="header-news"><h2>News</h2></div>
+    <div class="news">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet ab ea nostrum a commodi cumque eos, excepturi dignissimos voluptatibus nesciunt illo error temporibus illum, sint, porro beatae explicabo corrupti.
+        <div class="photo-news"></div>
+    </div>
+
+    <script>
+        document.body.onload=function(){
+            nbr=3;
+            p=0;
+            container=document.getElementById("container");
+            boutondroit=document.getElementById("boutondroit");
+            boutongauche=document.getElementById("boutongauche");
+            container.style.width=(nbr*100)+"%";
+            for(i=1;i<=nbr;i++){
+                div=document.createElement("div");
+                div.className="photo";
+                div.style.backgroundImage="url('images/carrousel"+i+".jpg')";
+                container.appendChild(div);
+
+                btncar=document.createElement("div");
+                btncar.className="btncar";
+                btncar.innerHTML="Sporty Page";
+                btncar.innerHTML="<a href='indexsport.html'>Sporty Page</a>";
+                div.appendChild(btncar);
+
+            }
+            afficherMasquer();
+        }
+        boutongauche.onclick=function(){
+            if(p>-nbr+1)
+                p--;
+            container.style.transform="translate("+p*100+"vw)";
+            container.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+        boutondroit.onclick=function(){
+            if(p<0)
+                p++;
+            container.style.transform="translate("+p*100+"vw)";
+            container.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+        function afficherMasquer(){
+            if(p==-nbr+1)
+                boutongauche.style.visibility="hidden";
+            else
+                boutongauche.style.visibility="visible";
+            if(p==0)
+                boutondroit.style.visibility="hidden";
+            else
+                boutondroit.style.visibility="visible";
+        }
+    </script>
+    
+
+</body>
+</html>
