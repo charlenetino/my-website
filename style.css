@@ -55,7 +55,20 @@ body{
     }
 }
 
+/*Topbar*/
 
+#topbar{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 90;
+    color: white;
+    transition: ease-in-out 1s;
+    text-shadow: 2px 2px 20px #000000;
+}
 
 /*Navbar*/
 
@@ -318,8 +331,27 @@ body{
     margin-left: 50px;
 }
 
+.weekswiper{
+    width: 95%;
+    height: 40vh;
+}
+
+
+.carousselweek1{
+    background-color: #E6635A;
+}
+
+.carousselweek2{
+    background-color: #E6635A;
+}
+
+.carousselweek3{
+    background-color: #E6635A;
+}
+
+
 .header-news{
-    margin-top: 30%;
+    margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 50px;
 }
@@ -333,15 +365,21 @@ body{
 .photo-news{
     margin-top: 40px;
     margin-bottom: 40px;
-    background-image: url("images/news.png");
     background-size: cover;
-    height: 400px;
+    height: 600px;
     border-radius: 20px;
     color: white;
     font-size: 70px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50%;
     text-shadow:  2px 2px #000000;
+}
+
+.photo-news:nth-child(1){
+    background-image: url("images/Myfavoriteworkout.jpg");
+}
+.photo-news:nth-child(2){
+    background-image: url("images/Myfavoriterecipies.jpg");
 }
 
 .footer{
@@ -519,4 +557,31 @@ body{
     bottom: auto !important;
     top: -25px !important;
     box-shadow: none ! important;
+}
+
+/*Presentation*/
+
+.titrepres{
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.descrpitionpres{
+    margin-top: 70px;
+    margin-bottom: 200px;
+
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.photopres{
+    background-image: url("images/photopresentation.jpg");
+    background-size: cover;
+    width: 80%;
+    height: 1000px;
+    margin-left: 10%;
+
 }
