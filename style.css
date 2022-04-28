@@ -5,7 +5,10 @@
 }
 
 html {
+    font-family: 'Cookie', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Bebas Neue', sans-serif;
+
 }
 
 body{
@@ -70,84 +73,61 @@ body{
     text-shadow: 2px 2px 20px #000000;
 }
 
-/*Navbar*/
-
-.menu{
-    position: fixed;
-    z-index: 100;
-    height: 120px;
-    width: 120px;
+#topbarbis{
     padding: 20px;
-    left: 0;
-    bottom: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 90;
     background-color: white;
-    box-shadow: 5px -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    transition: ease-in-out 0.4s;
 }
 
-#LANAV{
-    transform: translateX(-500px);
+.indexsport_sporty #topbarbis{
+    color: #E6635A;
+}
+.indexsport_mix #topbarbis{
+    color: #FABDBD;
+}
+.indexsport_yoga #topbarbis{
+    color: #F4A460;
+}
+
+/*Navbar*/
+
+.homebtn{
+    position: fixed;
+    z-index: 200;
+    margin: 28px 5%;
+    right: 0;
+}
+
+.homebtn img{
+    height: 80px;
 }
 
 .navbar{
-    transition: ease-in-out 0.4s;
-    z-index: 101;
-    background-color: white;
-    box-shadow: 5px -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    left: 0;
-    bottom: 0;
     display: flex;
-    align-items: left;
-    justify-content: bottom;
-    flex-direction: column-reverse;
-}
-
-.navbar .closee{
-    height: 120px;
-    width: 120px;
-    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+    position: fixed;
+    z-index: 100;
     left: 0;
     bottom: 0;
-}
-
-.navbar .closee img, .menu img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-}
-
-.navbar .btn{
-    padding: 50px 150px;
-    text-align: center;
-}
-.navbar :nth-child(2){
-    background-color: black;
-    color: white;
-}
-.navbar :nth-child(3){
-    background-color: #E6635A;
-    color: white;
-}
-.navbar :nth-child(4){
-    background-color: #FABDBD;
-    color: white;
-}
-.navbar :nth-child(5){
-    background-color: #F4A460;
-    color: white;
-}
-
-.navbar :nth-child(6){
-    color: black;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    font-size: 50px;
+    box-shadow: 0px 8px 21px 6px #000000;
 }
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: #000000;
 }
+
 
 /*Index Swiper*/
 
@@ -210,18 +190,12 @@ body{
     background-size: cover;   
 }
 
-.caroussel4{
-    background-image: url("images/carrousel4.jpg");
-    background-size: cover;   
-}
 
 .titrecarroussel{
     padding: 5px 20px;
     color: #000000;
     width:fit-content;
     background:white;
-    border-radius: 10px;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 
@@ -312,7 +286,7 @@ body{
     color: #F4A460;
 }
 
-/*Titres et News*/
+/*News*/
 
 .titrehomepage{
     position: absolute;
@@ -371,12 +345,12 @@ body{
     color: white;
     font-size: 70px;
     text-align: center;
-    padding-top: 50%;
+    padding-top: 350px;
     text-shadow:  2px 2px #000000;
 }
 
 .photo-news:nth-child(1){
-    background-image: url("images/Myfavoriteworkout.jpg");
+    background-image: url("images/FAVWORK.jpg");
 }
 .photo-news:nth-child(2){
     background-image: url("images/Myfavoriterecipies.jpg");
@@ -388,7 +362,7 @@ body{
     padding-left: 50px;
     margin-top: 100px;
     padding-top: 50px;
-    height: 20vh;
+    height: 500px;
 }
 
 .footer .container-btn{
@@ -419,30 +393,19 @@ body{
 
 /*Différentes pages*/
 
-.indexsport_sporty{
-    background-color: #E6635A;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -10;
-}
-.indexsport_mix{
-    background-color: #FABDBD;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -10;
-}
-.indexsport_yoga{
-    background-color: #F4A460;
+.indexsport_sporty, .indexsport_mix, .indexsport_yoga{
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -10;
 }
 
+.indexsport_sporty .deco{
+    background-color: #E6635A;
+}
+
 .indexsport_sporty .homephoto{
-    background-image: url("images/homephoto_sporty.jpeg");
+    background-image: url("images/Home_Sporty.jpg");
 }
 .indexsport_mix .homephoto{
     background-image: url("images/homephoto_mix.jpeg");
@@ -452,29 +415,30 @@ body{
     background-image: url("images/homephoto_yoga.jpeg");
 }
 
-.indexsport_sporty .accueil, .indexsport_sporty .titre{
-    color: #E6635A;    
+.indexsport_sporty .navbar :nth-child(1){
+    color: #E6635A;
 }
-.indexsport_mix .accueil, .indexsport_mix .titre{
+.indexsport_mix .navbar :nth-child(2){
     color: #FABDBD;
 }
-.indexsport_yoga .accueil, .indexsport_yoga .titre{
+.indexsport_yoga .navbar :nth-child(3){
     color: #F4A460;
 }
+
 
 /*Accueil*/
 
 .titre{
     position: absolute;
-    color: #000000;
-    background-color: white;
-    border-radius: 10px;
-    width: 25%;
-    margin-left: 70%;
-    margin-top: 5%;
-    text-align: center;
+    color: white;
+    background-color: #E6635A;
+    border-radius: 0 50px 50px 0;
+    width: 350px;
+    margin-left: 0;
+    margin-top: 140px;
+    text-align: left;
+    padding-left: 40px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
 }
 
 .accueil {
@@ -488,41 +452,64 @@ body{
 
 .homephoto{
     background-size: cover;
-    height: 600px;
-    width: 600px;
+    height: 800px;
+    width: 560px;
     position: absolute;
-    left: 0;
-    top : 40px;
+    right: 0;
+    top : 140px;
     z-index: -1;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.lvl{
+    font-size: xxx-large;
+    font-style: italic;
+    position: relative;
+    margin-top: 400px;    
+    margin-left: 10px;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    column-gap: 10px;
+}
+
+.iconeDuration, .iconeIntesity, .iconeEquipement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explicationDuration, .explicationIntesity, .explicationEquipement{
+    display: flex;
+    align-items: center;
+}
+
+.lvl img{
+    height: 80px;
+}
+
+.iconeDuration img{
+    height: 60px;
 }
 
 .citation{
     position: relative;
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    margin-top: 380px;
-    font-size: xxx-large;
-    font-style: italic;
-    color: white
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+    margin-top: 300px;
+    font-size: 40px;
+    color: black;
 }
 
 .plan{
     text-align: center;
     margin-top: 150px;
-    color: white;
+    color: #E6635A;
 }
 
-.indexsport_sporty .swiper {
-    background-color: #E6635A;
-}
-.indexsport_mix .swiper {
-    background-color: #FABDBD;
-}
-.indexsport_yoga .swiper {
-    background-color: #F4A460;
-}
 
 .indexsport_sporty .swiper, .indexsport_mix .swiper, .indexsport_yoga .swiper{
     height: 1500px;
@@ -543,12 +530,20 @@ body{
 .activite{
     display: inline-block;
     font-size: xxx-large;
+    background-color: #E6635A;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.activite img{
+    border-radius: 50%;
 }
 
 .swiper-slide a{
     text-decoration: none;
-    color: #000000;
-    background-color: white;margin-top: 50px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
     z-index: auto;
     padding: 10px 30px;
 }
@@ -557,6 +552,7 @@ body{
     bottom: auto !important;
     top: -25px !important;
     box-shadow: none ! important;
+    background-color: #E6635A !important;
 }
 
 /*Presentation*/
@@ -565,12 +561,30 @@ body{
     width: 100%;
     text-align: center;
     padding-top: 200px;
+    color: white;
+    text-shadow: 2px 2px 20px #000000;
+}
+
+.Who, .am, .I{
+    display: inline;
+}
+
+.Who{
+    color: #E6635A;
+}
+
+.am{
+    color: #FABDBD;
+}
+
+.I{
+    color: #F4A460;
 }
 
 .descrpitionpres{
-    margin-top: 70px;
+    margin-top: 900px;
     margin-bottom: 200px;
-
+    font-family: 'Cookie';
     width: 90%;
     margin-left: 5%;
     text-align: justify;
@@ -580,8 +594,90 @@ body{
 .photopres{
     background-image: url("images/photopresentation.jpg");
     background-size: cover;
-    width: 80%;
+    width: 90%;
     height: 1000px;
-    margin-left: 10%;
+    margin-left: 5%;
+    position: absolute;
+    top: 200px;
+    z-index: -20;
 
 }
+
+/*Navbar - Old*/
+/*
+.menu{
+    position: fixed;
+    z-index: 100;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    background-color: white;
+    transition: ease-in-out 0.4s;
+}
+
+#LANAV{
+    transform: translateX(-500px);
+}
+
+.navbar{
+    transition: ease-in-out 0.4s;
+    z-index: 101;
+    background-color: white;
+    box-shadow: 5px -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: left;
+    justify-content: bottom;
+    flex-direction: column;
+}
+
+.navbar .closee{
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar .closee img, .menu img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.navbar .btn{
+    padding: 50px 150px;
+    text-align: center;
+}
+.navbar :nth-child(2){
+    background-color: black;
+    color: white;
+}
+.navbar :nth-child(3){
+    background-color: #E6635A;
+    color: white;
+}
+.navbar :nth-child(4){
+    background-color: #FABDBD;
+    color: white;
+}
+.navbar :nth-child(5){
+    background-color: #F4A460;
+    color: white;
+}
+
+.navbar :nth-child(6){
+    color: black;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+*/

@@ -1,4 +1,4 @@
-document.body.onload=function(){
+/*document.body.onload=function(){
     var JECLICK=document.getElementById("JECLICK");
     var JERECLICK=document.getElementById("JERECLICK");
     var LANAV=document.getElementById("LANAV");
@@ -10,7 +10,7 @@ JECLICK.onclick = function(){
 JERECLICK.onclick = function(){
     LANAV.style.transform="translate(-500px)";
     JECLICK.style.transform="translate(0)";
-}
+}*/
 
 window.onscroll=function(){
     var TOPBAR=document.getElementById("topbar");
