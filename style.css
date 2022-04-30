@@ -144,6 +144,7 @@ a{
     font-size: 40px;
     transform: translateY(200px);
     transition: ease-in-out 0.4S;
+    
 }
 #soon2{
     background-color: #000000;
@@ -203,20 +204,20 @@ a{
 }
 
 .caroussel0{
-    background-image: url("images/carrousel0.jpg");
+    background-image: url("images/Carroussel_main/MAIILLOT.jpg");
     background-size: cover;   
 }
 
 .caroussel1{
-    background-image: url("images/carrousel1.jpeg");
+    background-image: url("images/Carroussel_main/SPORT.jpg");
     background-size: cover;   
 }
 .caroussel2{
-    background-image: url("images/carrousel2.jpg");
+    background-image: url("images/Carroussel_main/macedoinee.jpg");
     background-size: cover;   
 }
 .caroussel3{
-    background-image: url("images/carrousel3.jpg");
+    background-image: url("images/Carroussel_main/BEAUTY.jpg");
     background-size: cover;   
 }
 
@@ -253,6 +254,8 @@ a{
     transform: rotate(-45deg); 
     width: 160%;
     padding-right: 15%;
+    margin-top: 600px;
+    margin-bottom: -600px;
 }
 
 .caroussel1 .titrecarroussel{
@@ -270,6 +273,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px 20px #000000;
 }
 
 .programmes{
@@ -295,9 +299,11 @@ a{
     align-items: center;
     width: 220px;
     height: 20vh;
-    background-image: url(images/sporty.jpg);
+    background-image: url(images/SPORTI.jpg);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-shadow: 2px 2px 20px #000000;
+    border-radius: 20px;
 }
 .sporty .btn{
     color: #E6635A;
@@ -311,9 +317,11 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #FABDBD;
-    background-image: url(images/mix.png);
+    background-image: url(images/MIIX.png);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-shadow: 2px 2px 20px #000000;
+    border-radius: 20px;
 }
 .mix .btn{
     color: #FABDBD;
@@ -326,9 +334,11 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #F4A460;
-    background-image: url(images/yoga.jpg);
+    background-image: url(images/FLEXI.jpg);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-shadow: 2px 2px 20px #000000;
+    border-radius: 20px;
 }
 .yoga .btn{
     color: #F4A460;
@@ -456,11 +466,11 @@ a{
     background-image: url("images/Home_Sporty.jpg");
 }
 .indexsport_mix .homephoto{
-    background-image: url("images/homephoto_mix.jpeg");
+    background-image: url("images/mixx.jpg");
     transform: scaleX(-1);
 }
 .indexsport_yoga .homephoto{
-    background-image: url("images/homephoto_yoga.jpeg");
+    background-image: url("images/FLEX.jpg");
 }
 
 .indexsport_sporty .navbar :nth-child(1){
