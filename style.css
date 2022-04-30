@@ -17,6 +17,10 @@ body{
     font-size: 75px;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Load Page*/
 
 .loader-container{
@@ -128,6 +132,32 @@ body{
     color: #000000;
 }
 
+#soon{
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: fit-content;
+    padding: 25px 20px;
+    z-index: 300;
+    bottom: 0;
+    left: 54%;
+    font-size: 40px;
+    transform: translateY(200px);
+    transition: ease-in-out 0.4S;
+}
+#soon2{
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: fit-content;
+    padding: 25px 20px;
+    z-index: 300;
+    bottom: 0;
+    left: 77%;
+    font-size: 40px;
+    transform: translateY(200px);
+    transition: ease-in-out 0.4S;
+}
 
 /*Index Swiper*/
 
@@ -190,20 +220,20 @@ body{
     background-size: cover;   
 }
 
+.boutonHomepage a{
+    background-color: #E6635A;
+}
 
 .titrecarroussel{
     padding: 5px 20px;
     color: #000000;
     width:fit-content;
     background:white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-
-.boutonHomepage a{
-    background-color: #E6635A;
-}
-
-.caroussel0 .titrecarroussel{
+.caroussel0 .titrecarroussel, .caroussel1 .titrecarroussel, .caroussel2 .titrecarroussel, .caroussel3 .titrecarroussel{
     padding: 5px 20px;
     color: white;
     width:fit-content;
@@ -213,6 +243,24 @@ body{
     font-size: 140px;
     text-shadow: 2px 2px 20px #000000;
     margin-top: 27vh;
+}
+
+.comming0{
+    background-color: black;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #FFFFFF;
+    transform: rotate(-45deg); 
+    width: 160%;
+    padding-right: 15%;
+}
+
+.caroussel1 .titrecarroussel{
+    margin-top: 10vh;
+}
+
+.caroussel2, .caroussel3{
+    overflow: hidden;
 }
 
 .header-programme{
@@ -349,10 +397,10 @@ body{
     text-shadow:  2px 2px #000000;
 }
 
-.photo-news:nth-child(1){
+.photo1{
     background-image: url("images/FAVWORK.jpg");
 }
-.photo-news:nth-child(2){
+.photo2{
     background-image: url("images/Myfavoriterecipies.jpg");
 }
 
@@ -440,6 +488,13 @@ body{
     padding-left: 40px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+.indexsport_mix .titre{
+    background-color: #FABDBD;
+}
+
+.indexsport_yoga .titre{
+    background-color: #F4A460;
+}
 
 .accueil {
     font-size: 7vw;
@@ -510,6 +565,14 @@ body{
     color: #E6635A;
 }
 
+.indexsport_mix .plan{
+    color: #FABDBD;
+}
+
+.indexsport_yoga .plan{
+    color: #F4A460;
+}
+
 
 .indexsport_sporty .swiper, .indexsport_mix .swiper, .indexsport_yoga .swiper{
     height: 1500px;
@@ -535,6 +598,14 @@ body{
     border-radius: 20px;
 }
 
+.indexsport_mix .activite{
+    background-color: #FABDBD;
+}
+
+.indexsport_yoga .activite{
+    background-color: #F4A460;
+}
+
 .activite img{
     border-radius: 50%;
 }
@@ -553,6 +624,14 @@ body{
     top: -25px !important;
     box-shadow: none ! important;
     background-color: #E6635A !important;
+}
+
+.indexsport_mix .swiper-pagination{
+    background-color: #FABDBD !important;
+}
+
+.indexsport_yoga .swiper-pagination{
+    background-color: #F4A460 !important;
 }
 
 /*Presentation*/
@@ -602,6 +681,23 @@ body{
     z-index: -20;
 
 }
+
+/*Pages fav*/
+
+.titrefav{
+
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    color: black;
+    font-size: 100px;
+   
+}
+
+.fav{
+    height: 100vh;
+}
+
 
 /*Navbar - Old*/
 /*
