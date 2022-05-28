@@ -2,11 +2,17 @@ const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
+    speed: 1500,
 
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next1',
       prevEl: '.swiper-button-prev1',
+    },
+
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: true,
     },
 
     pagination: {

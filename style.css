@@ -36,6 +36,12 @@ a{
     align-items: center;
     justify-content:space-evenly;
     flex-direction: column;
+    background-image: url("images/palm.jpg");
+    font-size: 40px;
+}
+
+.loader-container h3{
+    font-size: 80px;
 }
 
 .loader{
@@ -173,6 +179,8 @@ a{
     --swiper-pagination-color: #fff;
     --swiper-navigation-size: 90px;
     --swiper-pagination-bullet-size :30px;
+    background-image: url("images/palm.jpg");
+    background-size: cover;
   }
 
 .swiper-slide {
@@ -207,12 +215,12 @@ a{
 }
 
 .caroussel0{
-    background-image: url("images/Carroussel_main/PHOTO_STRASBOURG.jpg");
+    background-image: url("images/Site/Carroussel0/Carroussel0.jpg");
     background-size: cover;   
 }
 
 .caroussel1{
-    background-image: url("images/Carroussel_main/SPORT.jpg");
+    background-image: url("images/Site/Carroussel1/Carroussel1.jpg");
     background-size: cover;   
 }
 .caroussel2{
@@ -261,6 +269,12 @@ a{
     margin-bottom: -400px;
 }
 
+.caroussel0 .titrecarroussel{
+    margin-top: 380px;
+    margin-bottom: 150px;
+}
+
+
 .caroussel1 .titrecarroussel{
     margin-top: 10vh;
 }
@@ -302,7 +316,7 @@ a{
     align-items: center;
     width: 220px;
     height: 20vh;
-    background-image: url(images/SPORTI.jpg);
+    background-image: url(images/Site/Carroussel1/SPORTY1.jpg);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -320,7 +334,7 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #FABDBD;
-    background-image: url(images/MIIX.png);
+    background-image: url(images/Site/Carroussel1/MIX1.png);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -337,7 +351,7 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #F4A460;
-    background-image: url(images/FLEXI.jpg);
+    background-image: url(images/Site/Carroussel1/FLEXI1.png);
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -466,14 +480,13 @@ a{
 }
 
 .indexsport_sporty .homephoto{
-    background-image: url("images/Home_Sporty.jpg");
+    background-image: url("images/Site/Sporty/SPORTY.jpg");
 }
 .indexsport_mix .homephoto{
-    background-image: url("images/mixx.jpg");
-    transform: scaleX(-1);
+    background-image: url("images/Site/Mix/MIX.jpg");
 }
 .indexsport_yoga .homephoto{
-    background-image: url("images/FLEX.jpg");
+    background-image: url("images/Site/Flexi/FLEXI.jpg");
 }
 
 .indexsport_sporty .navbar :nth-child(1){
@@ -592,24 +605,42 @@ a{
 }
 
 .indexsport_sporty .swiper img, .indexsport_mix .swiper img, .indexsport_yoga .swiper img{
+    display: inline;
     width: 200px;
     height: 200px;
-    float: left;
-    margin-right: 50px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .indexsport_sporty .swiper-slide, .indexsport_mix .swiper-slide, .indexsport_yoga .swiper-slide {
-    justify-content: space-evenly;
+    display: block;
+}
+
+.indexsport_sporty .titrecarroussel, .indexsport_mix .titrecarroussel, .indexsport_yoga .titrecarroussel{
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 30%;
 }
 
 .activite{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
     font-size: xxx-large;
     background-color: #E6635A;
     padding: 20px 40px;
     border-radius: 20px;
+    width: 85%;
+    height: 350px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 7.5%;
 }
+.activite_div1 { grid-area: 1 / 1 / 3 / 2; }
+.activite_div2 { grid-area: 1 / 2 / 2 / 3; }
+.activite_div3 { grid-area: 2 / 2 / 3 / 3; }
 
 .indexsport_mix .activite{
     background-color: #FABDBD;
@@ -628,6 +659,7 @@ a{
     color: white;
     background-color: black;
     margin-top: 50px;
+    margin-bottom: 50px;
     z-index: auto;
     padding: 10px 30px;
 }
@@ -639,6 +671,11 @@ a{
     background-color: #E6635A !important;
 }
 
+.indexsport_sporty .swiper, .indexsport_mix .swiper, .indexsport_yoga .swiper{
+    
+    --swiper-navigation-color: black !important;
+}
+
 .indexsport_mix .swiper-pagination{
     background-color: #FABDBD !important;
 }
@@ -647,9 +684,14 @@ a{
     background-color: #F4A460 !important;
 }
 
-.caroussel7Plan{
+.sunday{
     color: #000000;
+    margin-top: 540px;
+    font-size: 100px;
+    background-color: white;
 }
+
+
 
 /*Presentation*/
 
@@ -750,6 +792,9 @@ a{
     .navbar a{
         color: white;
     }
+    .navbar a:nth-child(1){
+        margin-top: 60px;
+    }
 
     .navbar a:hover:nth-child(1)  {
         transition: 0.4s ease-in-out;
@@ -780,10 +825,10 @@ a{
     }
 
     .soonpc{
-        top: 70vh
+        top: 73.8vh
     }
     .soon2pc{
-        top: 87vh
+        top: 90vh
     }
 
     .homebtn{
@@ -803,9 +848,21 @@ a{
         font-size: 70px;
     }
 
+    
+
     .caroussel0 .titrecarroussel{
-        margin-top: 20px;
+        margin-top: 240px;
+        margin-bottom: 0;
     }
+
+    .caroussel1 .titrecarroussel{
+        margin-top: 270px;
+    }
+
+    .caroussel2 .titrecarroussel, .caroussel3 .titrecarroussel{
+        margin-top: 570px;
+    }
+
 
     .caroussel0 a{
         box-shadow:  -4px 6px -3px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -817,7 +874,7 @@ a{
 
     .coming0{
         margin-top: 0;
-        margin-bottom: -600px;
+        margin-bottom: -800px;
     }
 
     .swiper{
@@ -957,15 +1014,16 @@ a{
         font-size: 30px;
     }
 
-    .swiper{
-        --swiper-navigation-color: black !important;
-        background-image: url("images/palm.jpg");
-        background-size: cover;
-    }
-
     .plan h3, .loader-container h3{
         margin: 0;
     }
+
+    .indexsport_sporty .titrecarroussel, .indexsport_mix .titrecarroussel, .indexsport_yoga .titrecarroussel{
+        width: 25%;
+        margin-left: 37.5%;
+    }
+
+
 }
 
 
