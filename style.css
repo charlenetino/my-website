@@ -215,20 +215,20 @@ a{
 }
 
 .caroussel0{
-    background-image: url("images/Site/Carroussel0/Carroussel0.jpg");
+    background-image: url("images/Carroussel0/Carroussel0.jpg");
     background-size: cover;   
 }
 
 .caroussel1{
-    background-image: url("images/Site/Carroussel1/Carroussel1.jpg");
+    background-image: url("images/Carroussel1/Carroussel1.jpg");
     background-size: cover;   
 }
 .caroussel2{
-    background-image: url("images/Carroussel_main/macedoinee.jpg");
+    background-image: url("images/Carroussel2/Carroussel2.jpg");
     background-size: cover;   
 }
 .caroussel3{
-    background-image: url("images/Carroussel_main/BEAUTY.jpg");
+    background-image: url("images/Carroussel3/Carroussel3.jpg");
     background-size: cover;   
 }
 
@@ -316,7 +316,7 @@ a{
     align-items: center;
     width: 220px;
     height: 20vh;
-    background-image: url(images/Site/Carroussel1/SPORTY1.jpg);
+    background-image: url("images/Carroussel1/SPORTY1.jpg");
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -334,7 +334,7 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #FABDBD;
-    background-image: url(images/Site/Carroussel1/MIX1.png);
+    background-image: url("images/Carroussel1/MIX1.png");
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -351,7 +351,7 @@ a{
     width: 220px;
     height: 20vh;
     background-color: #F4A460;
-    background-image: url(images/Site/Carroussel1/FLEXI1.png);
+    background-image: url("images/Carroussel1/FLEXI1.png");
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     text-shadow: 2px 2px 20px #000000;
@@ -425,10 +425,10 @@ a{
 }
 
 .photo1{
-    background-image: url("images/FAVWORK.jpg");
+    background-image: url("images/MAIN/FAVWORK.jpg");
 }
 .photo2{
-    background-image: url("images/Myfavoriterecipies.jpg");
+    background-image: url("images/MAIN/FAVRECIPIES.jpg");
 }
 
 .footer{
@@ -480,13 +480,13 @@ a{
 }
 
 .indexsport_sporty .homephoto{
-    background-image: url("images/Site/Sporty/SPORTY.jpg");
+    background-image: url("images/Sporty/SPORTY.jpg");
 }
 .indexsport_mix .homephoto{
-    background-image: url("images/Site/Mix/MIX.jpg");
+    background-image: url("images/MIX/MIX.jpg");
 }
 .indexsport_yoga .homephoto{
-    background-image: url("images/Site/Flexi/FLEXI.jpg");
+    background-image: url("images/Flexi/FLEXI.jpg");
 }
 
 .indexsport_sporty .navbar :nth-child(1){
@@ -730,7 +730,7 @@ a{
 }
 
 .photopres{
-    background-image: url("images/photopresentation.jpg");
+    background-image: url("images/Présentation/Présentation.jpg");
     background-size: cover;
     width: 90%;
     height: 1000px;
